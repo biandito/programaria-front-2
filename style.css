@@ -1,11 +1,30 @@
+body {
 font-family: "Open Sans", sans-serif;
-
-head {
+}
+header {
 height:100px;
 padding: 1px;
 margin-bottom: 40px;
-border: 1px solid #000;
+border-bottom: 1px solid #000;
 }
+
+@media (max-width: 768px) {
+    header {
+         margin-bottom: 20px;
+         height: 200px
+            }
+         }
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom:0;
+   }
+
+@media (max-width: 768px) {
+    h1 {
+         font-size: px
+        }
+                 }
 
 section {
     padding: 0;
@@ -23,11 +42,25 @@ section {
     max-width: 100%;
 }
 
+@media(max-width: 768px) {
+
+    .card {
+        display: block;
+        margin: 20px 10px;
+    } }
+
 img {
     display: block;
     width: 300px;
     height:300px;
 }
+
+@media(max-width: 768px) {   
+    img {
+     display: block;
+     height: 100%;
+     width: 100%;
+    } }
 
 details {
     width: 300px;
@@ -35,12 +68,26 @@ details {
     display: inline-block;
 }
 
+@media(max-width: 768px) {
+    .details {
+        width: 100%;
+        font-size: 16px;
+    } }
+
 summary {
     font-size: 18px;
     padding: 10px;
-}
+}   
 
 blockquote {
     color: #777;
     font-style: italic;
 }
+
+
+@media(max-width: 768px) {    .summary {
+        font-size: 16px;
+    } }
+    .card p {
+        font-size: 16px;
+    }
